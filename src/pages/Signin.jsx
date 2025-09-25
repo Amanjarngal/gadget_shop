@@ -15,6 +15,11 @@ const Signin = () => {
       [e.target.name]: e.target.value
     })
   }
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    console.log(formData)
+    
+  }
   return (
     <div className='flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 p-6'>
       {/* Left Section */}
@@ -22,7 +27,7 @@ const Signin = () => {
         <Lottie
         animationData={Login}
         loop={true}
-        
+
         />
       </div>
 
@@ -35,7 +40,7 @@ const Signin = () => {
           Sign in to continue to your account
         </p>
 
-        <form className='flex flex-col gap-5'>
+        <form className='flex flex-col gap-5' onSubmit={(e)=> handleSubmit(e)}>
           {/* Email */}
           <div className='flex flex-col gap-2'>
             <label
