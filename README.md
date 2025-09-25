@@ -1,12 +1,45 @@
-# React + Vite
+<h1>🛍️ Gadget Shop Website</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive e-commerce web application for browsing, searching, and purchasing the latest gadgets. Built with a focus on clean UI, scalability, and user experience.
 
-Currently, two official plugins are available:
+<h2>🚀 Features</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔐 User Authentication – Sign up, Sign in, and secure session handling.
 
-## Expanding the ESLint configuration
+🛒 Shopping Cart – Add, remove, and update gadgets in the cart.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💳 Checkout System – Place orders with payment integration (optional).
+
+🔍 Search & Filter – Easily find products by category, price, and rating.
+
+⭐ Product Ratings & Reviews – Users can share feedback on gadgets.
+
+📱 Responsive Design – Works seamlessly on desktop, tablet, and mobile.
+
+⚡ Fast & Optimized – Built with modern technologies for performance.
+
+<h1>🛠️ Tech Stack</h1>
+
+<h3>Frontend:</h3>
+
+React.js (with Vite or CRA)
+
+Tailwind CSS / ShadCN / MUI (UI Styling)
+
+React Router (Navigation)
+
+<h3>Backend:</h3>
+
+Node.js + Express.js
+
+MongoDB (Database) with Mongoose
+
+JWT Authentication
+
+Other Tools:
+
+Axios (API Calls)
+
+Stripe / Razorpay (Payment Integration – optional)
+
+Lucide / React Icons (Icons)
