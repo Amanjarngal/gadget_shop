@@ -1,10 +1,15 @@
+import Cards from '../common/Cards'
+import Swipwer from '@/common/Swipwer'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div>
-      home component
-    </div>
+    <>
+    <Swipwer />
+      <Cards/>
+    </>
+      
+    
   )
 }
 

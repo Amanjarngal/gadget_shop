@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { EyeOff, Eye } from 'lucide-react'
 import  Lottie from "lottie-react"
 import Login from "../lottie/Login.json"
+import { Link } from 'react-router-dom'
 const Signin = () => {
   const [seen, setSeen] = useState()
   const [formData, setFormdata] = useState({
@@ -32,7 +33,7 @@ const Signin = () => {
       </div>
 
       {/* Signin Box */}
-      <div className='bg-white shadow-lg rounded-2xl p-8 w-full max-w-md border border-gray-200'>
+      <div className='bg-white shadow-lg rounded-2xl p-8 w-full max-w-md border border-gray-200  shadow-yellow-200 '>
         <h1 className='text-2xl font-bold text-gray-800 mb-2 text-center'>
           Welcome Back 👋
         </h1>
@@ -95,12 +96,12 @@ const Signin = () => {
 
         {/* Footer Links */}
         <div className='flex justify-between mt-4 text-sm text-gray-500'>
-          <a href='#' className='hover:text-indigo-600'>
+          <Link to='#' className='hover:text-indigo-600'>
             Forgot Password?
-          </a>
-          <a href='#' className='hover:text-indigo-600'>
+          </Link>
+          <Link to='/signup' className='hover:text-indigo-600'>
             Create Account
-          </a>
+          </Link>
         </div>
       </div>
     </div>
