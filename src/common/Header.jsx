@@ -59,10 +59,12 @@ const components = [
 const Header=()=> {
   return (
     <>
-<div className="border  flex justify-around items-center p-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-gray-900">
+<div className="border flex justify-around items-center p-2 
+bg-gradient-to-r from-pink-300 via-rose-200 to-amber-200
+">
   <Link to="/">
-  <span className= "text-2xl text-white rounded-sm p-2 font-semibold">
-    Gedget  <span className="text-2xl text-yellow-400">Shop </span> 
+  <span className= "text-2xl text-white rounded-sm p-2 font-semibold ">
+    Gedget  <span className="text-2xl text-yellow-900">Shop </span> 
   </span>
   </Link>
   
