@@ -6,6 +6,7 @@ const Signup = () => {
   const [seen, setSeen] = useState()
   const [formData, setFormdata] = useState({
     email: '',
+    userName: '',
     password: '',
     confirmPassword: ''
   })
@@ -21,7 +22,7 @@ const Signup = () => {
     if(formData.password === formData.confirmPassword) {
       console.log(formData)
       return;
-    }else if(formData.email === '' || formData.password === '') {
+    }else if(formData.userName === '' || formData.email === '' || formData.password === '') {
       alert("Please fill all fields");
       return;
     }else if(formData.password.length < 6) {
@@ -56,6 +57,25 @@ const Signup = () => {
         </p>
 
         <form className='flex flex-col gap-5' onSubmit={(e)=> handleSubmit(e)}>
+          {/* Email */}
+          <div className='flex flex-col gap-2'>
+            <label
+              htmlFor='userName'
+              className='text-sm font-semibold text-gray-700'
+            >
+              UserName
+            </label>
+            <input
+              id='userName'
+              type='text'
+              name='userName'
+              onChange={e => handleChange(e)}
+              value={formData.userName}
+              placeholder='Enter your UserName'
+              className='px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none'
+            />
+          </div>
+
           {/* Email */}
           <div className='flex flex-col gap-2'>
             <label
